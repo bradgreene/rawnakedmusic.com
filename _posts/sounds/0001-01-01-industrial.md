@@ -4,9 +4,9 @@ category: sounds
 title: Industrial
 short: industrial
 order: 1
-aif: "/music/AaronGreene-Industrial-unsigned.aif"
-mp3: "/music/AaronGreene-Industrial-unsigned.mp3"
-ogg: "/music/AaronGreene-Industrial-unsigned.ogg"
+aif: "http://aarongreene.xyz/music/AaronGreene-Industrial-unsigned.aif"
+mp3: "http://aarongreene.xyz/music/AaronGreene-Industrial-unsigned.mp3"
+ogg: "http://aarongreene.xyz/music/AaronGreene-Industrial-unsigned.ogg"
 ---
 
 Chill industrial beat<br />

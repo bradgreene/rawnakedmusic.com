@@ -4,9 +4,9 @@ category: sounds
 title: In The Machine
 short: inthemachine
 order: 3
-aif: "/music/AaronGreene-InTheMachine-unsigned.aif"
-mp3: "/music/AaronGreene-InTheMachine-unsigned.mp3"
-ogg: "/music/AaronGreene-InTheMachine-unsigned.ogg"
+aif: "http://aarongreene.xyz/music/AaronGreene-InTheMachine-unsigned.aif"
+mp3: "http://aarongreene.xyz/music/AaronGreene-InTheMachine-unsigned.mp3"
+ogg: "http://aarongreene.xyz/music/AaronGreene-InTheMachine-unsigned.ogg"
 ---
 
 Surreal / Otherworldly / Dark<br />

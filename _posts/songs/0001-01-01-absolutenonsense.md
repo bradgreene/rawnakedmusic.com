@@ -4,7 +4,7 @@ category: songs
 title: Absolute Nonsense
 short: absolutenonsense
 order: 2
-aif: "/music/AaronGreene-AbsoluteNonsense-unsigned.aif"
-mp3: "/music/AaronGreene-AbsoluteNonsense-unsigned.mp3"
-ogg: "/music/AaronGreene-AbsoluteNonsense-unsigned.ogg"
+aif: "http://aarongreene.xyz/music/AaronGreene-AbsoluteNonsense-unsigned.aif"
+mp3: "http://aarongreene.xyz/music/AaronGreene-AbsoluteNonsense-unsigned.mp3"
+ogg: "http://aarongreene.xyz/music/AaronGreene-AbsoluteNonsense-unsigned.ogg"
 ---
