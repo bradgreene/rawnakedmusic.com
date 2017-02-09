@@ -2,3 +2,46 @@
 layout: default
 ---
 {% assign base = site.baseurl %}
+
+<div id="tracks-outline">
+ 
+  <div id="tracks-header">
+    <div id="tracks-header-text">Down the Rabbit Hole</div>
+  </div>
+
+  <div id="tracks">
+    
+    <span class="tracktype">Songs</span>
+    
+    <ul class="tracks">
+      {% assign sort = site.categories.songs | sort:"order" %}
+      {% for number in sort %}
+	    <li class="text"><a href="{{base}}/{{number.short}}">{{number.title}}</a></li>
+      {% endfor %}
+    </ul>
+    
+    <br><span class="tracktype">Sounds</span>
+    
+    <ul class="tracks">
+      {% assign sort = site.categories.sounds | sort:"order" %}
+      {% for number in sort %}
+	    <li class="text"><a href="{{base}}/{{number.short}}">{{number.title}}</a></li>
+      {% endfor %}
+    </ul>
+    
+    <br><span class="tracktype">Noise</span>
+    
+    <ul class="tracks">
+      {% assign sort = site.categories.noise | sort:"order" %}
+      {% for number in sort %}
+	    <li class="text"><a href="{{base}}/{{number.short}}">{{number.title}}</a></li>
+      {% endfor %}
+    </ul>
+    
+  </div>
+    
+  <div id="email">
+    <span class="email"><a href="mailto:rawnakedmusic@gmail.com">rawnakedmusic@gmail.com</a></span>
+  </div>
+  
+</div>
