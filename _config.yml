@@ -1,0 +1,7 @@
+auto: true
+baseurl: 
+permalink: /:title
+main_title: Aaron Greene
+prose:
+  rooturl: "_posts"
+markdown: kramdown

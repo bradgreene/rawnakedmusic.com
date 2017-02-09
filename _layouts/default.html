@@ -1,0 +1,87 @@
+---
+---
+{% assign base = site.baseurl %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Great+Vibes|Italianno|Lovers+Quarrel|Monsieur+La+Doulaise|Niconne|Parisienne|Pinyon+Script|Herr+Von+Muellerhoff|Tangerine" rel="stylesheet">
+  {% if page.category == "music" %} <title>{{page.title}}</title> {% elsif page.category == "tracks" %} <title>Tracks</title>
+  {% else %} <title>{{site.main_title}}</title> {% endif %}
+  <meta name="keywords" content="aaron greene music musician song songs soundtrack soundtracks tv television movie movies ambient dark atmospheric">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="{{base}}/favicon.ico" />
+  <link href="{{base}}/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{{base}}/circle.skin/circle.player.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.transform.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.grab.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.jplayer.js"></script>
+  <script type="text/javascript" src="{{base}}/js/mod.csstransforms.min.js"></script>
+  <script type="text/javascript" src="{{base}}/js/circle.player.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){    
+			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+			{
+				mp3: "{{page.mp3}}",
+				oga: "{{page.ogg}}"
+			}, 
+            {
+				cssSelectorAncestor: "#cp_container_1",
+                play: function() {
+                    $("#time").css({"visibility": "visible", "opacity": "1"});
+                }
+			});
+		});
+		</script>
+    
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#jquery_jplayer_1").bind($.jPlayer.event.timeupdate, function(event) { 
+                var currentTime = Math.floor(event.jPlayer.status.currentTime)
+                
+                $("#time").text($.jPlayer.convertTime(currentTime));
+            });
+        });
+        </script>
+    
+    <!--
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".cp-play").click(function(){
+                $("#time").fadeIn(300);
+            });
+            $(".cp-circle-control").click(function(){
+                $("#time").fadeIn(300);
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".download").click(function(){
+                $(this).css({
+                    "color": "#222",
+                    "cursor": "default"
+                })
+                $("#format").fadeIn(500);
+            });
+        });
+        </script>
+    -->
+    
+</head>
+
+<body>
+    
+  <div id="limiter">
+      
+    {{content}}
+      
+  </div>
+    
+</body>
+</html>

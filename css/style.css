@@ -1,0 +1,304 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: #999;
+  /*background-color: #f0f0f0;*/
+  background-color: #222;
+  position:absolute; top:0; bottom:0; right:0; left:0;
+  margin: 0;
+}
+
+@media all and (max-height: 420px) {
+  body {
+    -moz-transform: scale(0.75, 0.75);
+    zoom: 0.75;
+    zoom: 75%;
+  }
+}
+
+@media all and (max-height: 319px) {
+  body {
+    -moz-transform: scale(0.5, 0.5);
+    zoom: 0.5;
+    zoom: 50%;
+  }
+}
+
+@media all and (max-height: 199px) {
+  body {
+    -moz-transform: scale(0.4, 0.4);
+    zoom: 0.4;
+    zoom: 40%;
+  }
+}
+
+@media all and (max-width: 399px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media all and (max-width: 359px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 319px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+@media all and (max-height: 319px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+@font-face {
+    font-family: Scriptina;
+    src: url({{base}}/fonts/Scriptina-Pro.otf);
+}
+
+.text a { 
+  color: #999;
+  text-decoration: none; 
+}
+
+.text a:hover { 
+  color: #f0f0f0;
+  transition: color .2s ease, background .2s ease;
+  -webkit-transition: color .2s ease, background .2s ease;
+  -moz-transition: color .2s ease, background .2s ease;
+}
+
+#limiter {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#home {
+  width: 450px;
+  height: 52px;
+  margin: -26px 0 0 -225px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media all and (max-width: 520px) {
+  #home {
+    font-size: 1em;
+  }
+}
+
+#outline {
+  width: 100%;
+  height: 265px;
+  margin: -132.5px 0 0 -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media all and (max-height: 480px) {
+  #outline {
+    margin: -230px 0 0 -50%;
+  }
+}
+
+@media all and (max-height: 359px) {
+  #outline {
+    margin: -200px 0 0 -50%;
+  }
+}
+
+#description {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+#description p {
+  margin: 0;
+}
+
+#description-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#song {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+    
+.prototype-wrapper {
+	width:200px;
+	margin: 0 auto;
+}
+
+#filename {
+  margin: 0 auto;
+  text-align: center;
+  cursor: default;
+  z-index:1;
+  word-wrap: break-word;
+}
+
+#time, #time2, #time3 {
+  padding-top:60px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: default;
+  z-index:1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+#download {
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.download { 
+  color: #666;
+  text-decoration: none; 
+  cursor: default;
+}
+
+/*
+.download:hover { 
+  color: #222;
+  transition: color .2s ease, background .2s ease;
+  cursor: pointer;
+}
+*/
+
+#format {
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  padding-top: 5px;
+  text-align: center;
+  cursor: default;
+  /*display:none;*/
+}
+
+.formatmp3 {
+  margin-right: 8px;
+}
+
+#tracks-outline {
+  width: 100%;
+  margin: -185px 0 0 -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#tracks-header {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 36px;
+  color: #f0f0f0;
+}
+
+#tracks-header p {
+  margin: 0;
+}
+
+#tracks-header-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#tracks {
+  margin: 70px auto 0 auto;
+  text-align: center;
+}
+
+/*#tracks {
+  text-align: center;
+  margin: -165px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}*/
+
+.tracks {
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  margin:0;
+}
+
+.tracks a:link {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+/*
+.tracks a:visited { 
+  color: #222;
+}
+*/
+
+.tracks a:hover { 
+  color: #f0f0f0;
+  transition: color .2s ease, background .2s ease;
+  -webkit-transition: color .2s ease, background .2s ease;
+  -moz-transition: color .2s ease, background .2s ease;
+}
+
+.tracktype {
+  font-weight: bold;
+  font-style: italic;
+  cursor: default;
+}
+
+#email {
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+
+.email a {
+  color: #999;
+  text-decoration: none;
+}
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Herr Von Muellerhoff', cursive;
+
+font-family: 'Alex Brush', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Lovers Quarrel', cursive;*/
